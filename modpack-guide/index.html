@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOSRPG 리다이렉트 중...</title>
+</head>
+<body>
+    <span>NOSRPG로 리다이렉트 중입니다. 만약 자동으로 리다이렉트가 되지 않는다면</span>
+    <a href="javascript:;" class="redirect-link">여기</a>
+    <span>를 눌러주세요.</span>
+
+    <script>
+        const RDR_URL = `https://youtube.com/`
+        const URL_LINK = document.querySelector(".redirect-link")
+
+        window.addEventListener("load", function() {
+            URL_LINK.href = RDR_URL
+            window.location.href = RDR_URL
+        })
+    </script>
+</body>
+</html>
